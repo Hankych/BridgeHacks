@@ -1,0 +1,132 @@
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#active{
+background-color: #f28500;
+    color: white;
+}
+
+.topnav button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }}
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+
+body{font-family: Tahoma, Verdana, sans-serif;}
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.loginbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  float: left;
+
+}
+
+.signupbtn {
+    width: 16%;
+    margin-left: 42%;
+    margin-right: 42%;
+    background-color: white;
+    color: black;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+button:hover {
+  opacity:1;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .loginbtn {
+    width: 100%;
+  }
+}

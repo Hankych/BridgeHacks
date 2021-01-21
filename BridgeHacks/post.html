@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Name of Website -->
+        <title> VOLFIND - Post </title> 
+        <link rel = "stylesheet" href = "post.css"> 
+        <script src = "post.js"></script>
+
+        <!-- Hotjar Tracking Code for https://affectionate-kepler-cb1c63.netlify.app/ -->
+        <script>
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:1922579,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
+    </head>
+    <body>
+      <div style="width: 50%;" class = "box"> 
+        <img src="res/volfind.png" alt="This photo has been deleted">
+    </div>
+      <!-- The menu section -->
+      <header>
+        <nav>
+
+            <div class="topnav">
+              <a href="home.html">Home</a>
+              <a href="registration.html">Registration</a>
+              <a href="profile.html">Profile</a>
+              <a id = "active" href="post.html">Post</a>	
+      
+                <form action="login.html">
+                    <button type="submit">Login</button>
+                </form>
+            </div>          
+
+        </nav>
+       </header>
+
+       <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Post a Volunteer Opportunity</h1>
+          <hr>
+      
+          <label for="organization"><b>Organization</b></label>
+          <input type="text" placeholder="Enter Organization Name" name="orgname" required>
+      
+          <label for="location"><b>Location</b></label>
+          <input type="text" placeholder="Enter Location" name="locname" required>
+
+          <label for="date"><b>Date</b></label>
+          <input type="text" placeholder="MM/DD" name="date" required>
+
+          <label for="time"><b>Time</b></label>
+          <input type="text" placeholder="Ex. 12:00-16:00" name="posname" required>
+
+          <label for="position"><b>Position</b></label>
+          <input type="text" placeholder="Enter Position" name="posname" required>
+
+          <label for="min age"><b>Minimum Age</b></label>
+          <input type="text" placeholder="Enter Minimum Age" name="minage" required>
+
+          <label for="descripion of role"><b>Description of Role</b></label>
+          <textarea rows="25" cols="163" type="description" placeholder="Enter Description of Role" name="descriprole" required></textarea> 
+          <!-- don't separate the textarea tags or else-->
+          <button type="login" class="signupbtn"><a href="registration.html">New Member? Sign up</a></button>
+
+          <div class="clearfix">
+            <button type="submit" class="loginbtn">Log in</button>
+          </div>
+
+
+        </div>
+      </form>
+
+    </body>
+ </html>

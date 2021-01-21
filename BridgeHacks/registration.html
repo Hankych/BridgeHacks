@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    
+        <!-- Name of Website -->
+        <title> VOLFIND - Registration </title> 
+        <link rel = "stylesheet" href = "registration.css"> 
+        <script src = "registration.js"></script>
+        
+        <!-- Hotjar Tracking Code for https://affectionate-kepler-cb1c63.netlify.app/ -->
+        <script>
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:1922579,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+      
+    </head>
+    <body>
+      <div style="width: 50%;" class = "box"> 
+        <img src="res/volfind.png" alt="This photo has been deleted">
+    </div> <!--logo-->
+      <!-- The menu section -->
+      <div class="topnav">
+        <a href="home.html">Home</a>
+        <a id = "active" href="registration.html">Registration</a>
+        <a href="profile.html">Profile</a>
+        <a href="post.html">Post</a>	
+
+          <form action="login.html">
+              <button type="submit">Login</button>
+          </form>
+      </div>
+
+
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+              <h1>Registration</h1>
+              <hr>
+          
+              <label for="username"><b>Username</b></label>
+              <input id = "username" type="text" placeholder="Enter Username" name="username" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input id = "password" type="password" placeholder="Enter Password" name="psw" required>
+          
+              <label for="psw-confirm"><b>Confirm Password</b></label>
+              <input id = "confirmPassword" type="password" placeholder="Confirm Password" name="psw-confirm" required>
+
+              <label for="email"><b>Email</b></label>
+              <input id = "email" type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="First Name"><b>First Name</b></label>
+              <input id = "fName" type="text" placeholder="Enter First Name" name="firstname" required>
+
+              <label for="Last Name"><b>Last Name</b></label>
+              <input id = "lName" type="text" placeholder="Enter Last Name" name="lastname" required>
+
+              <label for="age"><b>Age</b></label>
+              <input id = "age" type="text" placeholder="Enter Age" name="age" required>
+
+              <button type="login" class="loginbtn"><a href="Login.HTML">Already a member? Log in</a></button>
+
+              
+              <div class="clearfix">
+                <form action="profile.html">
+                  <button type="submit" class="signupbtn" onclick="signUp()">Register</button>
+                  <script language = "Javascript">
+                    const fs = require('fs');
+                    let data = "fuckersfuckersfuckers";
+                    fs.writeFile("accounts.txt",data,(error)=>{
+                      if(error) throw err;
+                    })
+                   </script>
+                </form>
+              </div>
+            </div>
+          </form>
+    </body>
+ </html>
